@@ -1,7 +1,10 @@
-
 public class HelloApp {
     public static void main(String[] args) {
-        // This prints the message to the console
-        System.out.println("Hello-World!");
+        // Check if an argument was provided
+        if (args.length > 0) {
+            System.out.println("Hello, " + args[0] + "!");
+        } else {
+            System.out.println("Hello, World!");
+        }
     }
 }
